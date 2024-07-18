@@ -2,7 +2,7 @@
 
 Welcome to **Crypto Tracker**, the ultimate tool to monitor, analyze, and optimize your cryptocurrency investments.
 
-![Crypto Tracker Logo](https://via.placeholder.com/150)
+![Crypto Tracker Logo](/public/logo.png)
 
 ## Table of Contents
 - [Overview](#overview)
