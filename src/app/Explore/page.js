@@ -43,7 +43,7 @@ export default function Page() {
             onChange={inputHandler}
             value={input}
             placeholder="Search your Crypto"
-            className="rounded-lg w-72 h-8 text-black list-none mb-2 md:mb-0"
+            className="rounded-lg w-72 h-8 text-black list-none mb-2 md:mb-0 text-center"
           />
           <button className="rounded-lg border-solid border border-blue-200 px-6 py-1 mx-2 hover:bg-blue-600" onClick={searchHandler}>
             Search

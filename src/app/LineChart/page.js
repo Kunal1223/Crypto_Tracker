@@ -1,6 +1,8 @@
 'use client';
+import Lottie from 'lottie-react';
 import React, { useMemo } from 'react';
 import Chart from 'react-google-charts';
+import loading from '../../data/loading.json'
 
 const LineChart = ({ historicalData, className = '' }) => {
     const data = useMemo(() => {
@@ -17,7 +19,7 @@ const LineChart = ({ historicalData, className = '' }) => {
     }, [historicalData]);
 
     if (data.length === 1) {
-        return <div>No historical data available</div>;
+        return <Lottie animationData={loading} className='animation h-60 flex justify-center' />;
     }
 
     return (

@@ -5,6 +5,7 @@ import Lottie from 'lottie-react';
 import rotation from '../../../data/crypto.json';
 import LineChart from '../../LineChart/page';
 import { Chart } from 'react-google-charts';
+import loading from '../../../data/loading.json'
 
 const CoinPage = ({ params }) => {
   const { id } = params;
@@ -37,7 +38,7 @@ const CoinPage = ({ params }) => {
     fetchHistoricalData();
   }, [id]);
 
-  if (!coinData || !historicalData) return <div>Loading...</div>;
+  if (!coinData || !historicalData) return <Lottie animationData={loading} className='animation h-72 flex justify-center' />;
 
   const marketDataPieChart = [
     ['Metric', 'Value'],

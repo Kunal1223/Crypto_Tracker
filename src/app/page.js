@@ -4,6 +4,7 @@ import rotante from '../data/rotation.json';
 import { useContext, useEffect, useState } from 'react';
 import { CoinContext } from './context/page';
 import LineChart from './maketcap/page';
+import homeanimation from '../data/homeload.json'
 
 export default function Home() {
   const { allcoins, currency } = useContext(CoinContext);
@@ -23,16 +24,17 @@ export default function Home() {
       const response = await fetch('https://api.coingecko.com/api/v3/global', options);
       const data = await response.json();
 
-      console.log('API Response:', data); // Debug log
+      // console.log('API Response:', data);
 
-      // Check if the data is in the expected format
+      // Check if the data is in the expected format if it is in expected formate then 
+      //we proceed
       if (data && data.data && data.data.total_market_cap) {
         const formattedData = [
           ['Currency', 'Total Market Cap'],
           ...Object.entries(data.data.total_market_cap).map(([currency, marketCap]) => [currency, marketCap])
         ];
 
-        console.log('Formatted Data:', formattedData);
+        // console.log('Formatted Data:', formattedData);
         setMarketCapData(formattedData);
       } else {
         console.error('Unexpected API response format:', data);
@@ -69,7 +71,7 @@ export default function Home() {
         {marketCapData.length > 1 ? (
           <LineChart historicalData={marketCapData} />
         ) : (
-          <p className='text-center'>Loading market cap data...</p>
+          <Lottie animationData={homeanimation} className='animation h-60' />
         )}
       </div>
     </>
