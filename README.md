@@ -114,3 +114,5 @@ Crypto Tracker includes a custom 404 page to enhance the user experience when a 
 - **CoinGecko API:** For providing the cryptocurrency data.
 
 Feel free to contribute to this project by opening issues or submitting pull requests. Happy tracking!
+
+Thank you
