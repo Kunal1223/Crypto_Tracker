@@ -42,8 +42,8 @@ Crypto Tracker is a dynamic web application built with Next.js that provides rea
 *List of the top 20 cryptocurrencies with real-time data.*
 
 ### Product Page
-![Product page](/public/product.png)
-![all Graphs](/public/product1.png)
+![Product page](/public/pro.png)
+![all Graphs](/public/pro1.png)
 *Detailed Insights for Particular coin*
 
 ## Getting Started
@@ -107,7 +107,7 @@ Replace `your_coingecko_api_key` with your actual CoinGecko API key.
 
 Crypto Tracker includes a custom 404 page to enhance the user experience when a page is not found.
 
-![Custom 404 Page](https://via.placeholder.com/600x300?text=Custom+404+Page)
+![Custom 404 Page](/public/notfound.png)
 
 ## Credits
 
