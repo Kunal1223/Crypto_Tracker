@@ -5,7 +5,7 @@ import { useContext, useEffect, useState } from 'react';
 import { CoinContext } from './context/page';
 import LineChart from './maketcap/page';
 import homeanimation from '../data/homeload.json'
-
+ 
 export default function Home() {
   const { allcoins, currency } = useContext(CoinContext);
   const [displayCoin, setDisplayCoin] = useState([]);
