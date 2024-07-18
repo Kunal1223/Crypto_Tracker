@@ -29,16 +29,22 @@ Crypto Tracker is a dynamic web application built with Next.js that provides rea
 ## Screenshots
 
 ### Landing Page
-![Landing Page](https://via.placeholder.com/600x300?text=Landing+Page)
+![Landing Page](/public/landing.png)
 *Dynamic landing page with animations and a global market cap graph.*
 
 ### Global Cryptocurrency Market Cap
-![Global Market Cap](https://via.placeholder.com/600x300?text=Global+Market+Cap)
+![Global Market Cap](/public/market.png)
 *Graph showing the global market cap of all cryptocurrencies.*
 
 ### Explore Page
-![Explore Page](https://via.placeholder.com/600x300?text=Explore+Page)
+![Explore Page](/public/explore.png)
+![All Coins](/public/explore1.png)
 *List of the top 20 cryptocurrencies with real-time data.*
+
+### Product Page
+![Product page](/public/product.png)
+![all Graphs](/public/product1.png)
+*Detailed Insights for Particular coin*
 
 ## Getting Started
 
